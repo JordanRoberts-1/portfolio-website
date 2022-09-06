@@ -17,10 +17,10 @@ const Home = () => {
           Software Developer
         </h1>
         <div className="space-x-4 flex flex-row py-2 justify-center">
-          <button className="w-[45%] text-white text-2xl border-zinc-800 border-2 px-1 bg-zinc-800 bg-opacity-80 hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up">
+          <button className="w-[45%] text-white font-light text-2xl px-1 py-1 bg-zinc-800 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up">
             Resume
           </button>
-          <button className="w-[45%] text-white text-2xl border-zinc-800 border-2 px-1 bg-zinc-800 bg-opacity-80 hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up">
+          <button className="w-[45%] text-white font-light text-2xl px-1 py-1 bg-zinc-800 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up">
             Projects
           </button>
         </div>

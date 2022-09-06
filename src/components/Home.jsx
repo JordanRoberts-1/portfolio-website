@@ -10,7 +10,7 @@ const Home = () => {
       name="Home"
       className="w-full h-screen bg-[url('../public/images/HomepageBackground.jpg')] bg-no-repeat bg-cover bg-center bg-fixed grid place-items-center"
     >
-      <div className="text-6xl w-[15ch + 5px] font-retro">
+      <div className="text-6xl 12 font-retro">
         <Typewriter
           options={{
             strings: ["Hi, I'm Jordan"],
@@ -18,12 +18,7 @@ const Home = () => {
             loop: true,
             pauseFor: 10000,
           }}
-          className="text-6xl text-white"
         />
-
-        {/* <h1 className="text-white text-6xl font-mono text-center mb-8 animate-type">
-          Hi, I'm Jordan
-        </h1> */}
         <h1 className="text-white text-2xl font-mono text-center animate-fade-in-up opacity-0">
           Software Developer
         </h1>

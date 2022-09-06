@@ -6,7 +6,7 @@ function App() {
     <>
       <Navbar />
       <Home />
-      <div name="Resume" className="bg-zinc-200 h-screen w-screen"></div>
+      <div name="Resume" className="bg-zinc-200 h-screen w-full"></div>
 
     </>
   );

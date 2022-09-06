@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-screen h-20 items-center bg-zinc-800 drop-shadow-lg space-x-6 p-4 hidden md:flex fixed">
+      <div className="w-full h-20 items-center bg-zinc-800 drop-shadow-2xl space-x-12 hidden md:flex fixed z-10">
         <Link to="Home" smooth={true} duration={500}>
           <CodeBracketIcon className=" stroke-white h-8 hover:stroke-yellow-200 cursor-pointer" />
         </Link>
@@ -25,7 +25,7 @@ const Navbar = () => {
         <NavbarButton title="About Me" />
         <NavbarButton title="Contact Me" />
       </div>
-      <div className="w-screen h-16 bg-zinc-800 drop-shadow-lg md:hidden fixed">
+      <div className="w-screen h-16 bg-zinc-800 drop-shadow-lg md:hidden fixed z-10">
         {!navMenu ? (
           <Bars3Icon
             className="absolute md:hidden stroke-white w-16 right-4"
@@ -45,14 +45,16 @@ const Navbar = () => {
               : "bg-zinc-800 w-full px-4 py-2 m-0 inline-block"
           }
         >
-          <li className="text-6xl text-white border-b-2 text-center">Resume</li>
-          <li className="text-6xl text-white border-b-2 text-center">
+          <li className="text-6xl text-white border-b-2 text-center font-extralight">
+            Resume
+          </li>
+          <li className="text-6xl text-white border-b-2 text-center font-extralight">
             Projects
           </li>
-          <li className="text-6xl text-white border-b-2 text-center">
+          <li className="text-6xl text-white border-b-2 text-center font-extralight">
             About Me
           </li>
-          <li className="text-6xl text-white border-b-2 text-center">
+          <li className="text-6xl text-white border-b-2 text-center font-extralight">
             Contact Me
           </li>
         </ul>

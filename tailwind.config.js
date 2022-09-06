@@ -6,7 +6,18 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Inconsolata', 'Helvetica', 'Arial', 'sans-serif']
+        'sans': ['Inconsolata', 'Helvetica', 'Arial', 'sans-serif'],
+        'mono': ['Anonymous Pro']
+      },
+      keyframes: {
+        fadeinup: {
+          '0%': { transform: 'translateY(50%)',
+        opacity: 0},
+          '100%': { transform: 'translateY(0%)', opacity:100}
+        }
+      },
+      animation: {
+        'fade-in-up': 'fadeinup 750ms ease-in-out forwards'
       }
     },
 

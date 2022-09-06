@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Inconsolata', 'Helvetica', 'Arial', 'sans-serif'],
-        'mono': ['Anonymous Pro']
+        'mono': ['Anonymous Pro'],
+        'retro': ['Share Tech Mono']
       },
       keyframes: {
         fadeinup: {
@@ -17,7 +18,7 @@ module.exports = {
         }
       },
       animation: {
-        'fade-in-up': 'fadeinup 750ms ease-in-out forwards'
+        'fade-in-up': 'fadeinup 750ms 1s ease-in-out forwards'
       }
     },
 

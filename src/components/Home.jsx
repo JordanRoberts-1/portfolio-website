@@ -10,21 +10,21 @@ const Home = () => {
       className="w-full h-screen bg-[url('../public/images/HomepageBackground.jpg')] bg-no-repeat bg-cover bg-center bg-fixed grid place-items-center"
     >
       <div className="">
-        <h1 className="text-white text-5xl font-mono text-center">
+        <h1 className="text-white text-6xl font-mono text-center mb-8">
           Hi, I'm Jordan
         </h1>
-        <h1 className="text-white text-2xl font-mono text-center animate-fade-in-up">
+        <h1 className="text-white text-2xl font-mono text-center animate-fade-in-up opacity-0">
           Software Developer
         </h1>
         <div className="space-x-4 flex flex-row py-2 justify-center">
-          <button className="w-[45%] text-white font-light text-2xl px-1 py-1 bg-zinc-800 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up">
+          <button className="w-[45%] text-white font-light text-2xl px-1 py-1 bg-zinc-800 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up opacity-0">
             Resume
           </button>
-          <button className="w-[45%] text-white font-light text-2xl px-1 py-1 bg-zinc-800 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up">
+          <button className="w-[45%] text-white font-light text-2xl px-1 py-1 bg-zinc-800 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up opacity-0">
             Projects
           </button>
         </div>
-        <div className="flex flex-row space-x-32 justify-center content-center mt-2 animate-fade-in-up">
+        <div className="flex flex-row space-x-32 justify-center content-center mt-2 animate-fade-in-up opacity-0">
           <LinkedIn />
           <Github />
         </div>

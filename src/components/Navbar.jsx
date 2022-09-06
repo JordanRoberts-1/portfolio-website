@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full h-20 items-center bg-zinc-800 drop-shadow-2xl space-x-12 p-8 hidden md:flex fixed z-10">
+      <div className="w-full h-20 items-center bg-zinc-800 drop-shadow-2xl space-x-12 p-8 hidden lg:flex fixed z-10">
         <Link to="Home" smooth={true} duration={500}>
           <CodeBracketIcon className=" stroke-white h-8 hover:stroke-yellow-200 cursor-pointer" />
         </Link>
@@ -32,15 +32,15 @@ const Navbar = () => {
           <Github />
         </div>
       </div>
-      <div className="w-screen h-16 bg-zinc-800 drop-shadow-lg md:hidden fixed z-10">
+      <div className="w-screen h-16 bg-zinc-800 drop-shadow-lg lg:hidden fixed z-10">
         {!navMenu ? (
           <Bars3Icon
-            className="absolute md:hidden stroke-white w-16 right-4"
+            className="absolute lg:hidden stroke-white w-16 right-4"
             onClick={handleClick}
           />
         ) : (
           <XMarkIcon
-            className="absolute md:hidden stroke-white w-16 right-4"
+            className="absolute lg:hidden stroke-white w-16 right-4"
             onClick={handleClick}
           />
         )}

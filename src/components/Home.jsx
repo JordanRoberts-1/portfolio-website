@@ -2,6 +2,7 @@ import React from "react";
 import LinkedIn from "./LinkedIn";
 import Github from "./Github";
 import { ChevronDoubleDownIcon } from "@heroicons/react/24/outline";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
@@ -9,18 +10,28 @@ const Home = () => {
       name="Home"
       className="w-full h-screen bg-[url('../public/images/HomepageBackground.jpg')] bg-no-repeat bg-cover bg-center bg-fixed grid place-items-center"
     >
-      <div className="">
-        <h1 className="text-white text-6xl font-mono text-center mb-8">
+      <div className="text-6xl w-[15ch + 5px] font-retro">
+        <Typewriter
+          options={{
+            strings: ["Hi, I'm Jordan"],
+            autoStart: true,
+            loop: true,
+            pauseFor: 10000,
+          }}
+          className="text-6xl text-white"
+        />
+
+        {/* <h1 className="text-white text-6xl font-mono text-center mb-8 animate-type">
           Hi, I'm Jordan
-        </h1>
+        </h1> */}
         <h1 className="text-white text-2xl font-mono text-center animate-fade-in-up opacity-0">
           Software Developer
         </h1>
         <div className="space-x-4 flex flex-row py-2 justify-center">
-          <button className="w-[45%] text-white font-light text-2xl px-1 py-1 bg-zinc-800 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up opacity-0">
+          <button className="w-40 text-white font-light text-2xl px-1 py-1 bg-zinc-800 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up opacity-0">
             Resume
           </button>
-          <button className="w-[45%] text-white font-light text-2xl px-1 py-1 bg-zinc-800 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up opacity-0">
+          <button className="w-40 text-white font-light text-2xl px-1 py-1 bg-zinc-800 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up opacity-0">
             Projects
           </button>
         </div>

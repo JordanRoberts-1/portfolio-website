@@ -13,10 +13,15 @@ const Home = () => {
       <div className="text-6xl 12 font-retro">
         <Typewriter
           options={{
-            strings: ["Hi, I'm Jordan"],
+            strings: [
+              "Hi, I'm Jordan",
+              "Check Out My Work",
+              "Like What You See?",
+              "Let's Talk",
+            ],
             autoStart: true,
             loop: true,
-            pauseFor: 10000,
+            pauseFor: 3000,
           }}
         />
         <h1 className="text-white text-2xl font-mono text-center animate-fade-in-up opacity-0">

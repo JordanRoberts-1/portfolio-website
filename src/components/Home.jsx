@@ -3,6 +3,7 @@ import LinkedIn from "./LinkedIn";
 import Github from "./Github";
 import { ChevronDoubleDownIcon } from "@heroicons/react/24/outline";
 import Typewriter from "typewriter-effect";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Home = () => {
   return (
@@ -28,10 +29,10 @@ const Home = () => {
           Software Developer
         </h1>
         <div className="space-x-4 flex flex-row py-2 justify-center">
-          <button className="w-40 text-white font-light text-2xl px-1 py-1 bg-zinc-800 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up opacity-0">
+          <button className="w-40 text-white font-light text-2xl px-1 py-1 bg-zinc-900 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up opacity-0">
             Resume
           </button>
-          <button className="w-40 text-white font-light text-2xl px-1 py-1 bg-zinc-800 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up opacity-0">
+          <button className="w-40 text-white font-light text-2xl px-1 py-1 bg-zinc-900 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up opacity-0">
             Projects
           </button>
         </div>
@@ -41,8 +42,11 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="absolute bottom-0 w-full h-52 bg-gradient-to-t from-black"></div>
       <div className=" absolute bottom-2">
-        <ChevronDoubleDownIcon className="w-12 stroke-white animate-bounce hover:stroke-yellow-200 cursor-pointer" />
+        <Link to="Projects" smooth={true} duration={750}>
+          <ChevronDoubleDownIcon className="w-12 stroke-white animate-bounce hover:stroke-yellow-200 cursor-pointer" />
+        </Link>
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full h-20 items-center bg-zinc-800 drop-shadow-2xl space-x-12 p-8 hidden lg:flex fixed z-10">
+      <div className="w-full h-20 items-center bg-zinc-900 drop-shadow-2xl space-x-12 p-8 hidden lg:flex fixed z-10">
         <Link to="Home" smooth={true} duration={500}>
           <CodeBracketIcon className=" stroke-white h-8 hover:stroke-yellow-200 cursor-pointer" />
         </Link>

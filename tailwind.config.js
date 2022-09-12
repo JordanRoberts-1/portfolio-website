@@ -19,13 +19,20 @@ module.exports = {
       },
       animation: {
         'fade-in-up': 'fadeinup 750ms 2.75s ease-in-out forwards',
-      }
+      }, 
+      colors: {
+        'light': '#3e3b3a',
+        'dark': '#292524'
+      },
     },
-
-    sm: '640px',
-    md: '768px',
-    lg: '1024px',
-    xl: '1280px',
+    screens: {
+      'xs': '480px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    }
   },
   plugins: [],
 }

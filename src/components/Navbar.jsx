@@ -52,16 +52,16 @@ const Navbar = () => {
               : "bg-zinc-800 w-full px-4 py-2 m-0 inline-block"
           }
         >
-          <li className="text-6xl text-white border-b-2 text-center font-extralight">
+          <li className="text-6xl text-neutral-300 border-b-neutral-400 border-b-2 text-center font-extralight">
             Resume
           </li>
-          <li className="text-6xl text-white border-b-2 text-center font-extralight">
+          <li className="text-6xl text-neutral-300 border-b-neutral-400 border-b-2 text-center font-extralight">
             Projects
           </li>
-          <li className="text-6xl text-white border-b-2 text-center font-extralight">
+          <li className="text-6xl text-neutral-300 border-b-neutral-400 border-b-2 text-center font-extralight">
             About Me
           </li>
-          <li className="text-6xl text-white border-b-2 text-center font-extralight">
+          <li className="text-6xl text-neutral-300 border-b-neutral-400 border-b-2 text-center font-extralight">
             Contact Me
           </li>
         </ul>

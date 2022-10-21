@@ -8,11 +8,11 @@ const Contact = () => {
     >
       <div className="flex flex-col items-center rounded-lg bg-gradient-to-b from-neutral-900 via-neutral-900 to-zinc-900 shadow-lg p-8 mt-32">
         <h1 className="text-white text-5xl font-retro font-bold">About Me</h1>
-        <p className="max-w-[40vw] text-2xl">
+        <p className="max-w-[40vw] text-2xl text-neutral-300">
           I'm a software developer with a bachelors in Computer Science and
           minor in math from the University of Oklahoma. I'm particularly
           interested in lower level languages and software and have experience
-          with: C++, JS, Python, Java.
+          with: C++, JS, Python, Java, SQL.
           <br />
           <br />
           Frameworks/Libraries I've used include: OpenGL, glm, imgui, React,

@@ -15,10 +15,17 @@ module.exports = {
           '0%': { transform: 'translateY(50%)',
         opacity: 0},
           '100%': { transform: 'translateY(0%)', opacity:100},
-        },
+        }, fadeinupfadeout: {
+          '0%': { transform: 'translateY(50%)',
+        opacity: 0},
+          '20%': { transform: 'translateY(0%)', opacity:100},
+          '80%': { transform: 'translateY(0%)', opacity:100},
+          '100%': { transform: 'translateY(0%)', opacity:0}
+        }
       },
       animation: {
         'fade-in-up': 'fadeinup 750ms 2.75s ease-in-out forwards',
+        'fade-in-up-fade-out': 'fadeinupfadeout 5s 0s ease-in-out forwards'
       }, 
       colors: {
         'light': '#3e3b3a',

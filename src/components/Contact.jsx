@@ -7,7 +7,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    e.target.reset();
 
     emailjs
       .sendForm(
@@ -26,6 +25,7 @@ const Contact = () => {
           setEmailPopup(false);
         }
       );
+    e.target.reset();
   };
 
   return (

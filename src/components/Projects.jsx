@@ -8,11 +8,11 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   const flappyBirdDescription =
-    "Flappy bird written in low-level C++ and OpenGL";
+    "Flappy bird written in low-level C++ and OpenGL. GLFW is used to handle the windowing and input events while glew is used as the backend for it.";
   const portfolioDescription =
-    "The website that you're on! Written in Javascript using React and TailwindCSS. Designed and implemented by me with a few helper libraries such as the typewriter effect on the home screen.";
+    "The website that you're on! Written in Javascript using React and TailwindCSS. Reactive design that scales across mobile and desktop intuitively, Designed and implemented by me with a few helper libraries such as the typewriter effect on the home screen.";
   const physicsDescription =
-    "2D physics and collision simulator in low level c++ and opengl. Rendering using a hyrbrid of instancing and batched rendering. Collision detection allows for rotating bodies using the Separated Axis Theorem and resolves collisions intuitively.";
+    "2D physics and collision simulator in low level C++ and OpenGL. Rendering using a hyrbrid of instancing and batched rendering. Collision detection allows for rotating bodies using the Separated Axis Theorem and resolves collisions intuitively.";
   return (
     <div
       name="Projects"
@@ -25,7 +25,7 @@ const Projects = () => {
         <ProjectCard
           preview={placeholder}
           image={placeholder}
-          title="AI Plays Homemade Flappy Bird"
+          title="Homemade Flappy Bird"
           languages={["C++", "GLSL"]}
           frameworks="OpenGL, glm, glfw, imGui, Eigen, stbi"
           description={flappyBirdDescription}

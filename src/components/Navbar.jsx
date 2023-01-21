@@ -26,10 +26,16 @@ const Navbar = () => {
         <NavbarButton title="Resume" />
         <NavbarButton title="Projects" />
         <NavbarButton title="About Me" />
-        <NavbarButton title="Contact Me" />
         <div className="flex-row flex space-x-8 right-16 absolute">
-          <LinkedIn />
-          <Github />
+          <a
+            href="https://www.linkedin.com/in/jordan-roberts-174240263/"
+            target="_blank"
+          >
+            <LinkedIn />
+          </a>
+          <a href="https://github.com/JordanRoberts-1" target="_blank">
+            <Github />
+          </a>
         </div>
       </div>
       <div className="w-screen h-16 bg-zinc-800 drop-shadow-lg lg:hidden fixed z-10">
@@ -52,18 +58,21 @@ const Navbar = () => {
               : "bg-zinc-800 w-full px-4 py-2 m-0 inline-block"
           }
         >
-          <li className="text-6xl text-neutral-300 border-b-neutral-400 border-b-2 text-center font-extralight">
-            Resume
-          </li>
-          <li className="text-6xl text-neutral-300 border-b-neutral-400 border-b-2 text-center font-extralight">
-            Projects
-          </li>
-          <li className="text-6xl text-neutral-300 border-b-neutral-400 border-b-2 text-center font-extralight">
-            About Me
-          </li>
-          <li className="text-6xl text-neutral-300 border-b-neutral-400 border-b-2 text-center font-extralight">
-            Contact Me
-          </li>
+          <Link to="Resume" smooth={true} duration={500}>
+            <li className="text-6xl text-neutral-300 border-b-neutral-400 border-b-2 text-center font-extralight">
+              Resume
+            </li>
+          </Link>
+          <Link to="Projects" smooth={true} duration={500}>
+            <li className="text-6xl text-neutral-300 border-b-neutral-400 border-b-2 text-center font-extralight">
+              Projects
+            </li>
+          </Link>
+          <Link to="About Me" smooth={true} duration={500}>
+            <li className="text-6xl text-neutral-300 border-b-neutral-400 border-b-2 text-center font-extralight">
+              Contact Me
+            </li>
+          </Link>
         </ul>
       </div>
     </>

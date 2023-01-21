@@ -2,6 +2,7 @@ import React from "react";
 import LanguageBubble from "./LanguageBubble";
 import { useState } from "react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import Github from "./Github";
 
 const ProjectCard = ({
   preview,
@@ -10,6 +11,7 @@ const ProjectCard = ({
   languages,
   frameworks,
   description,
+  link,
 }) => {
   const [cardExpanded, setCardExpanded] = useState(false);
   const handleClick = () => {
@@ -61,6 +63,9 @@ const ProjectCard = ({
                 {description}
               </p>
               <h1 className="text-2xl text-zinc-200 self-start font-sans">{`Frameworks/Libraries: ${frameworks}`}</h1>
+              <a href={link} target="_blank">
+                <Github />
+              </a>
             </div>
             <XMarkIcon
               className="absolute z-40 stroke-zinc-200 w-12 top-4 right-4 cursor-pointer transform transition duration-300 hover:rotate-180"

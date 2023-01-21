@@ -2,12 +2,17 @@ import React from "react";
 import placeholder from "../assets/placeholder-flappybird.png";
 import PortfolioPreview from "../assets/portfolio-website-picture.png";
 import PortfolioFull from "../assets/portfolio-website-full.png";
+import PhysicsFull from "../assets/physics-cropped.png";
+import PhysicsPreview from "../assets/physics-full.png";
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   const flappyBirdDescription =
-    "Flappy bird written in low-level C++ and OpenGL which can be played by either a player or an AI. Q-Learning was implemented using a custom Neural Network library to learn how to play the game. The agent can save their training to be loaded and played at a later time.";
-
+    "Flappy bird written in low-level C++ and OpenGL";
+  const portfolioDescription =
+    "The website that you're on! Written in Javascript using React and TailwindCSS. Designed and implemented by me with a few helper libraries such as the typewriter effect on the home screen.";
+  const physicsDescription =
+    "2D physics and collision simulator in low level c++ and opengl. Rendering using a hyrbrid of instancing and batched rendering. Collision detection allows for rotating bodies using the Separated Axis Theorem and resolves collisions intuitively.";
   return (
     <div
       name="Projects"
@@ -16,14 +21,15 @@ const Projects = () => {
       <h1 className="text-white text-5xl mt-32 font-retro mb-2 font-bold">
         PROJECTS
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-8">
         <ProjectCard
           preview={placeholder}
           image={placeholder}
           title="AI Plays Homemade Flappy Bird"
           languages={["C++", "GLSL"]}
-          frameworks="OpenGL, glm, imGui, Eigen"
+          frameworks="OpenGL, glm, glfw, imGui, Eigen, stbi"
           description={flappyBirdDescription}
+          link="https://github.com/JordanRoberts-1/OpenGL-FlappyBird"
         ></ProjectCard>
         <ProjectCard
           preview={PortfolioPreview}
@@ -31,17 +37,18 @@ const Projects = () => {
           title="Portfolio Website"
           languages={["JS", "React", "Tailwind"]}
           frameworks="React, TailwindCSS, react-scroll, typewriter-effect"
+          description={portfolioDescription}
+          link="https://github.com/JordanRoberts-1/portfolio-website"
         ></ProjectCard>{" "}
         <ProjectCard
-          preview={placeholder}
-          title="AI Plays Homemade Flappy Bird"
+          preview={PhysicsPreview}
+          image={PhysicsFull}
+          title="2D Physics Simulator in C++ and OpenGL"
           languages={["C++", "GLSL"]}
+          frameworks="OpenGL, glm, glfw, imGui"
+          description={physicsDescription}
+          link="https://github.com/JordanRoberts-1/2DPhysicsSimulator"
         ></ProjectCard>{" "}
-        <ProjectCard
-          preview={placeholder}
-          title="AI Plays Homemade Flappy Bird"
-          languages={["C++", "GLSL"]}
-        ></ProjectCard>
       </div>
     </div>
   );

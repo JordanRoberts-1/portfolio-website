@@ -29,16 +29,25 @@ const Home = () => {
           Software Developer
         </h1>
         <div className="space-x-4 flex flex-row py-2 justify-center">
-          <button className="w-40 text-white font-light text-2xl px-1 py-1 bg-zinc-900 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up opacity-0">
+          <button className="w-40 text-white px-1 py-1 font-light text-2xl bg-zinc-900 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up opacity-0">
             Resume
           </button>
-          <button className="w-40 text-white font-light text-2xl px-1 py-1 bg-zinc-900 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up opacity-0">
-            Projects
+          <button className="w-40 text-white px-1 py-1 font-light text-2xl bg-zinc-900 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up opacity-0">
+            <Link to="Projects" smooth={true} duration={500} className="h-auto">
+              Projects
+            </Link>
           </button>
         </div>
         <div className="flex flex-row space-x-32 justify-center content-center mt-2 animate-fade-in-up opacity-0">
-          <LinkedIn />
-          <Github />
+          <a
+            href="https://www.linkedin.com/in/jordan-roberts-174240263/"
+            target="_blank"
+          >
+            <LinkedIn />
+          </a>
+          <a href="https://github.com/JordanRoberts-1" target="_blank">
+            <Github />
+          </a>
         </div>
       </div>
 

@@ -1,5 +1,6 @@
 {
   "name": "portfolio-app-react",
+  "homepage": "http://JordanRoberts-1.github.io/portfolio-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

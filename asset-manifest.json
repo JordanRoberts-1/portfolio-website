@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.426d9687.css",
+    "main.js": "/portfolio-website/static/js/main.775dd485.js",
+    "static/media/portfolio-website-picture.png": "/portfolio-website/static/media/portfolio-website-picture.1148def1a85666902e16.png",
+    "static/media/portfolio-website-full.png": "/portfolio-website/static/media/portfolio-website-full.2efa3317712e7b20ec4a.png",
+    "static/media/HomepageBackground.jpg": "/portfolio-website/static/media/HomepageBackground.a4c91c8fd3e3c7df426b.jpg",
+    "static/media/physics-full.png": "/portfolio-website/static/media/physics-full.7972de703f552e89c320.png",
+    "static/media/placeholder-flappybird.png": "/portfolio-website/static/media/placeholder-flappybird.10ad17c95c73085a1736.png",
+    "static/media/physics-cropped.png": "/portfolio-website/static/media/physics-cropped.52492a8b079cb78bfa73.png",
+    "index.html": "/portfolio-website/index.html",
+    "main.426d9687.css.map": "/portfolio-website/static/css/main.426d9687.css.map",
+    "main.775dd485.js.map": "/portfolio-website/static/js/main.775dd485.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.426d9687.css",
+    "static/js/main.775dd485.js"
+  ]
+}

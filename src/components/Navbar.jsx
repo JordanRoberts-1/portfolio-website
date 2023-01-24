@@ -25,7 +25,7 @@ const Navbar = () => {
         </Link>
         <a
           className="text-white text-2xl cursor-pointer hover:text-yellow-200 md:text-4xl"
-          href="https://jordanrobertsdeveloper.com/Resume.pdf"
+          href="https://docs.google.com/viewer?url=https://github.com/JordanRoberts-1/portfolio-website/raw/main/Resume.pdf"
           target="_blank"
         >
           Resume

@@ -30,7 +30,12 @@ const Home = () => {
         </h1>
         <div className="space-x-4 flex flex-row py-2 justify-center">
           <button className="w-40 text-white px-1 py-1 font-light text-2xl bg-zinc-900 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up opacity-0">
-            Resume
+            <a
+              href="https://docs.google.com/viewer?url=https://github.com/JordanRoberts-1/portfolio-website/raw/main/Resume.pdf"
+              target="_blank"
+            >
+              Resume
+            </a>
           </button>
           <button className="w-40 text-white px-1 py-1 font-light text-2xl bg-zinc-900 bg-opacity-[95%] hover:bg-opacity-100 hover:text-yellow-200 rounded-md animate-fade-in-up opacity-0">
             <Link to="Projects" smooth={true} duration={500} className="h-auto">

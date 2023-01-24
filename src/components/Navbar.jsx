@@ -23,7 +23,13 @@ const Navbar = () => {
         <Link to="Home" smooth={true} duration={500}>
           <CodeBracketIcon className=" stroke-white h-8 hover:stroke-yellow-200 cursor-pointer" />
         </Link>
-        <NavbarButton title="Resume" />
+        <a
+          className="text-white text-2xl cursor-pointer hover:text-yellow-200 md:text-4xl"
+          href="https://jordanrobertsdeveloper.com/Resume.pdf"
+          target="_blank"
+        >
+          Resume
+        </a>
         <NavbarButton title="Projects" />
         <NavbarButton title="About Me" />
         <div className="flex-row flex space-x-8 right-16 absolute">

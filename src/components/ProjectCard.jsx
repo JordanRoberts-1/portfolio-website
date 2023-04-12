@@ -21,7 +21,7 @@ const ProjectCard = ({
   return (
     <>
       <div
-        className="w-[85vw] xs:w-64 border-2 border-zinc-900 rounded-xl min-h-fit shadow-lg 
+        className="w-[85vw] xs:w-64 border-2 border-zinc-900 rounded-xl h-80 shadow-lg 
      hover:from-black hover:via-neutral-900 hover:to-light shadow-black cursor-pointer bg-gradient-to-b from-black via-neutral-800 to-light flex flex-col
      transform transition duration-300 hover:scale-125"
         onClick={handleClick}

@@ -4,6 +4,10 @@ import PortfolioPreview from "../assets/portfolio-website-picture.png";
 import PortfolioFull from "../assets/portfolio-website-full.png";
 import PhysicsFull from "../assets/physics-cropped.png";
 import PhysicsPreview from "../assets/physics-full.png";
+import WaveFunctionPreview from "../assets/wavefunction-full.png";
+import WaveFunction from "../assets/wavefunction-cropped.png";
+import PathfindingPreview from "../assets/pathfinding-full.png";
+import Pathfinding from "../assets/pathfinding-cropped.png";
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
@@ -13,6 +17,10 @@ const Projects = () => {
     "The website that you're on! Written in Javascript using React and TailwindCSS. Reactive design that scales across mobile and desktop intuitively, Designed and implemented by me with a few helper libraries such as the typewriter effect on the home screen.";
   const physicsDescription =
     "2D physics and collision simulator in low level C++ and OpenGL. Rendering using a hyrbrid of instancing and batched rendering. Collision detection allows for rotating bodies using the Separated Axis Theorem and resolves collisions intuitively.";
+  const waveFunctionDescription =
+    "Online simulator for the wave function collapse procedural generation algorithm. A static single page webpage written in Javascript and TailwindCSS. Extensive state management and data manipulation is present in this project!";
+  const pathfindingDescription =
+    "A* pathfinding algorithm visualizer written in Java using the JavaFX graphics/application library along with FXML and FXCSS for design and implementation";
   return (
     <div
       name="Projects"
@@ -39,7 +47,7 @@ const Projects = () => {
           frameworks="React, TailwindCSS, react-scroll, typewriter-effect"
           description={portfolioDescription}
           link="https://github.com/JordanRoberts-1/portfolio-website"
-        ></ProjectCard>{" "}
+        ></ProjectCard>
         <ProjectCard
           preview={PhysicsPreview}
           image={PhysicsFull}
@@ -48,7 +56,25 @@ const Projects = () => {
           frameworks="OpenGL, glm, glfw, imGui"
           description={physicsDescription}
           link="https://github.com/JordanRoberts-1/2DPhysicsSimulator"
-        ></ProjectCard>{" "}
+        ></ProjectCard>
+        <ProjectCard
+          preview={WaveFunctionPreview}
+          image={WaveFunction}
+          title="Wave Function Collapse Simulator"
+          languages={["JS", "React", "Tailwind"]}
+          frameworks="React, TailwindCSS"
+          description={waveFunctionDescription}
+          link="https://github.com/JordanRoberts-1/wave-function-collapse"
+        ></ProjectCard>
+        <ProjectCard
+          preview={PathfindingPreview}
+          image={Pathfinding}
+          title="A* Pathfinding Visualizer"
+          languages={["Java", "FXML", "FXCSS"]}
+          frameworks="JavaFX, SceneBuilder"
+          description={pathfindingDescription}
+          link="https://github.com/JordanRoberts-1/AStarPathFinding"
+        ></ProjectCard>
       </div>
     </div>
   );

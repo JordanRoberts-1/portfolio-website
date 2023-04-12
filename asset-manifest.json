@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.2e5f1319.css",
-    "main.js": "/static/js/main.e915ef7b.js",
+    "main.css": "/static/css/main.62c6a7c1.css",
+    "main.js": "/static/js/main.ea66feb4.js",
     "static/media/portfolio-website-picture.png": "/static/media/portfolio-website-picture.1148def1a85666902e16.png",
+    "static/media/wavefunction-full.png": "/static/media/wavefunction-full.45602a0a21ffee2b1c0a.png",
     "static/media/portfolio-website-full.png": "/static/media/portfolio-website-full.2efa3317712e7b20ec4a.png",
+    "static/media/wavefunction-cropped.png": "/static/media/wavefunction-cropped.5b6e5351998af19104e5.png",
     "static/media/HomepageBackground.jpg": "/static/media/HomepageBackground.a4c91c8fd3e3c7df426b.jpg",
     "static/media/physics-full.png": "/static/media/physics-full.7972de703f552e89c320.png",
+    "static/media/pathfinding-full.png": "/static/media/pathfinding-full.71965aa15b54b26d3451.png",
     "static/media/placeholder-flappybird.png": "/static/media/placeholder-flappybird.10ad17c95c73085a1736.png",
     "static/media/physics-cropped.png": "/static/media/physics-cropped.52492a8b079cb78bfa73.png",
     "index.html": "/index.html",
-    "main.2e5f1319.css.map": "/static/css/main.2e5f1319.css.map",
-    "main.e915ef7b.js.map": "/static/js/main.e915ef7b.js.map"
+    "main.62c6a7c1.css.map": "/static/css/main.62c6a7c1.css.map",
+    "main.ea66feb4.js.map": "/static/js/main.ea66feb4.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e5f1319.css",
-    "static/js/main.e915ef7b.js"
+    "static/css/main.62c6a7c1.css",
+    "static/js/main.ea66feb4.js"
   ]
 }
